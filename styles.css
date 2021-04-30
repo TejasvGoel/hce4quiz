@@ -1,0 +1,235 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family:  futura;
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: futura;
+  src: url(/Users/hisham/Downloads/HCE4/UXD/Quiz-1);
+}
+
+div {
+  font-family:futura;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /*background-image: url("https://images.unsplash.com/photo-1500027014421-46ccc843776a?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");*/
+  /* wind turbines */
+  /*background-image: url("https://i.postimg.cc/7PBTYXxS/agriculture-alternative-energy-clouds-countryside-414837.jpg");*/
+  /* woman swinging */
+  background-image: url("https://images.pexels.com/photos/1319795/pexels-photo-1319795.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  /*background-color: black;*/
+  background: rgba(0, 0, 0, 0.6);
+  /*opacity: 60%;*/
+  border-radius: 0px;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  /*box-shadow: 0 0 10px 2px; */
+}
+
+.header{
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 0%, 20%);
+  background-color: hsl(var(--hue), 0%, 20%);
+  border-radius: 0px;
+  padding: 5px 10px;
+  
+  color: white;
+  outline: none;
+}
+
+.explain-btn {
+  border-radius: 0px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  /*border-color: black;*/
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: #4CFF33;
+  /*color: black;*/
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+  color: #FF3333;
+}
+
+.start-btn, .next-btn, .end-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e0e0e0;
+}
+h1 {
+  position: absolute;
+  top: 45px;
+  font-size: 400%;
+  color: #f5f5f5;
+}
+
+
+/* Background Styles Only */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFDFDF;
+}
+
+.side-links {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.side-link-youtube {
+  background-color: red;
+}
+
+.side-link-twitter {
+  background-color: #1DA1F2;
+}
+
+.side-link-facebook {
+  background-color: #6e5494;
+}
+
+.side-link-homepage {
+  background-color: #3b87c3 ;
+}
+
+.side-link-text {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.side-link-icon {
+  color: white;
+  font-size: 30px;
+}
